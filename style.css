@@ -1,0 +1,563 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --ui-yellow: #FCDA43;
+    --ui-red: #F0532A;
+    --ui-green: #AFC94F;
+
+}
+
+@font-face {
+    font-family: 'gab-font';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gabriola'), url('gabriola/gabriola Font Download.woff') format('woff');
+}
+
+@font-face {
+    font-family: "cervan";
+    src: url("Cervanttis/Cervanttis.eot?") format("eot"),url("Cervanttis/Cervanttis.woff") format("woff"),url("Cervanttis/Cervanttis.ttf") format("truetype"),url("Cervanttis/Cervanttis.svg#CervanttisRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+/*Navigation Start----------*/
+
+.navbar {
+    font-family: 'gab-font';
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.mobileDescrip {
+    display: none;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    width: 150px;
+}
+
+.bookend {
+    height: 100px;
+    width: 96px;
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbarColor {
+    background-color: var(--ui-yellow);
+}
+
+.navbar-links ul {
+    height: 51px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: -50px;
+    
+}
+
+.navbar-links li {
+    list-style: none;
+    background-color: var(--ui-yellow);
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: black;
+    padding-top: .7rem;
+    padding-bottom: .5rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: var(--ui-red);
+}
+
+.toggle-button {
+    position: absolute;
+    top: -1px;
+    right: -9px;
+    font-size: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 42px;
+    height: 15px;
+}
+
+.toggle-button .bar {
+    height: 1.5px;
+    width: 60%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/*Navigation End----------*/
+/*body begin--------------*/
+.container {
+    height: auto;
+    overflow: hidden;
+    margin-top: -100px;
+}
+.mainArea {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 8.5% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.5%;
+    grid-template-rows: 8rem 75vh 150vh 100vh;
+}
+
+.aboutBlock {
+    background-image: url('http://wytheria.com/JessicaJoy/pizzasavant/images/about-block.svg');
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.blockBtn {
+    background-color: var(--ui-yellow);
+    font-family: 'gab-font';
+    font-size: 1.25rem;
+    border: none;
+    padding: .5rem 2rem .5rem 2rem;
+    text-align: center;
+    width: 90%;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+
+}
+
+.blockBtn:hover {
+    background-color: var(--ui-red); 
+    cursor: pointer;
+    
+}
+
+.blockText {
+    font-family: 'gab-font';
+    font-weight: 100;
+    line-height: 1.25;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.blockBtn a {
+    color: black;
+    font-family: 'gab-font';
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.freshInContent {
+    max-height: 90%;
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.freshIn {
+    padding-left: 5vw;
+    padding-right: 10vw;
+    color: white;
+    background-image: url("http://wytheria.com/JessicaJoy/pizzasavant/images/menu-block.svg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+.freshInPiz {
+    grid-column-end: 13;
+    grid-column-start: 6;
+    grid-row-start: 2;
+    z-index: -1;
+    margin-top: -180px;
+    justify-self: beginning;
+}
+
+.leftPizza {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    z-index: 5;
+    justify-self: end;
+    margin-top: -50px;
+}
+
+.blockTitles {
+    margin: 20px 0px -20px 0px;
+    font-family: "cervan";
+    font-weight: 100;
+    font-size: 2.75rem;
+    color: white;
+    text-align: center;
+}
+
+.aboutInfo {
+    margin-top: 5%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 30%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.aboutInfoContent {
+    max-height: 90%;
+    overflow: hidden ;
+}
+
+.cateringDiv {
+    background-image: url("http://wytheria.com/JessicaJoy/pizzasavant/images/catering-image.png");
+    display: block;
+    background-size: cover;
+    background-position: center;
+    margin-top: -30%;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.cateringBlock {
+    padding-left: 5vw;
+    padding-right: 10vw;
+    color: white;
+    background-image: url("http://wytheria.com/JessicaJoy/pizzasavant/images/catering-block.svg");
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+    padding-top: 10%;
+
+}
+
+.cateringBlockTitle {
+    margin-top: 10%;
+}
+ 
+/*FOOTER---------------------*/
+/*
+.backToTop {
+    
+    margin-top: -54px;
+    margin-left: 9px;
+    text-decoration: none;
+    font-family: "cervan";
+    font-size: 4rem;
+    z-index: 1;
+}
+
+.backToTop {
+    text-decoration: none;
+    font-family: "cervan";
+    font-size: 4rem;
+    z-index: 1;
+    line-height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+.backToTop, a {
+    text-decoration: none;
+}
+/*
+.backToTopBg {
+    position: fixed;
+    background-color: var(--ui-yellow);
+    bottom: 1rem;
+    right: 1rem;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}*/
+
+.backToTopBg {
+    position: fixed;
+    background-color: var(--ui-yellow);
+    bottom: 1rem;
+    right: 1rem;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+  /* Center content vertically and horizontally with flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .backToTop {
+    text-decoration: none;
+    font-family: "cervan";
+    font-size: 4rem;
+    z-index: 1;
+    line-height: 0;
+    / * no need for absolute positioning now. */
+  }
+
+.backToTopLink, a {
+    color: var(--ui-red);
+}
+
+.footerContainer {
+    margin-top: 0px;
+    background-color: var(--ui-green);
+    padding-top: 0%;
+    padding-bottom: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    //align-items: center;
+}
+
+.footerMenu {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.footerLogo {
+    //margin-top: -50px;
+    margin-bottom: 60px;
+    width: 150px;
+}
+
+.footerTitle {
+    font-family: "cervan";
+    font-size: 1.7rem;
+}
+
+.contactTitle {
+    margin-top: -15px;
+    margin-left: 15px;
+}
+
+.footerList, ul {
+    list-style-type: none;
+    font-family: 'gab-font';
+    font-size: 1.2rem;
+}
+
+.footerNavLeft {
+    margin-top: -65px;
+}
+
+.footerList, ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.footList, li {
+    //padding-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    /*Navigation Start----------*/
+    .brand-title {
+        width: 150px;
+        margin: 1rem 0rem 0rem 1rem;
+        z-index: 10;
+    }
+
+    .footerContainer {
+        align-items: center;
+    }
+
+
+    .mobileDescrip {
+        display: inline;
+        padding-left: 20px;
+    }
+
+    .bookend {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+        z-index: 9999;
+        height: 50px;
+        
+    }
+
+    .navbar ul {
+        position: fixed;
+        
+    }
+
+    .toggleDiv {
+        position: fixed;
+        right: .8rem;
+        top: .75rem;
+        border-radius: 50%;
+        display: block;
+        height: 45px;
+        width: 45px;
+        background-color: var(--ui-yellow);
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    .toggle-button {
+        color: var(--ui-red);
+        display: flex;
+        margin-top: 12px;
+        margin-left: -10px;
+    }
+
+    .navbar-links {
+        //display: none;
+        width: 100%;
+
+        display: flex;
+        margin-left: 100%;
+        transition: margin-left 0.3s ease;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbarColor {
+        width: 0px;
+    }
+
+    .navbar-links ul {
+        padding-top: 120px;
+        top: 0px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+        .navbar-links li a {
+            padding: .5rem 1rem;
+        }
+
+    .navbar-links.active {
+        margin-left: 0%;
+        //display: flex;
+    }
+    .aboutInfo {
+        //padding-top: 20%;
+    }
+    /*Navigation End----------*/
+    /*Body start--------------*/
+    .freshIn {
+        //margin-top: 8rem;
+        grid-column-end: 11;
+    }
+
+    /*Footer --------------- */
+    .footerContainer {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1350px) {
+    .leftPizza {
+        justify-self: start;
+        
+    }
+
+    .aboutInfo {
+       // margin-top: -20%;
+    }
+
+    .freshInPiz {
+        justify-self: end;
+    }
+}
+
+/*extra small devices*/
+@media (max-width: 600px) {
+    .blockTitles {
+        font-size: 2rem;
+        margin-bottom: .25rem;
+    }
+    .aboutInfo {
+        //margin-top: 30%;
+    }
+    .cateringBlock {
+        padding-top: 10%;
+    }
+    .freshIn {
+        padding-right: 25%
+    }
+}
+
+@media (min-height: 1200px) {
+    .freshIn {
+        padding-top: 10%;
+    }
+    .aboutInfo {
+       // padding-top: 50%;
+    }
+}
