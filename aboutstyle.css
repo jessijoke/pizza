@@ -1,0 +1,57 @@
+.aboutContainer {
+    display: grid;
+    grid-template-columns: 8.5% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.5%;
+    grid-template-rows: 300px 300px 75px 250px 250px;
+}
+
+.whoweart {
+    background-image: url('http://wytheria.com/JessicaJoy/pizzasavant/images/about-whoweart.png');
+    display: block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.centerpizzas {
+    background-image: url('http://wytheria.com/JessicaJoy/pizzasavant/images/wwa-pizzas.png');
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    z-index: -1;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.whatwereabout {
+    background-image: url('http://wytheria.com/JessicaJoy/pizzasavant/images/about-whatwereabout.png');
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.aboutMargins {
+    padding: 0rem 3rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+.blockTitles {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+    .aboutContainer {
+        grid-template-rows: 750px 300px 75px 300px 650px;
+    }
+}
