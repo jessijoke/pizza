@@ -8,7 +8,7 @@
 .aboutContainer {
     display: grid;
     grid-template-columns: 8.5% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.5%;
-    grid-template-rows: 300px 300px 75px 300px 300px 650px;
+    grid-template-rows: 100px 500px 75px 500px 100px 650px;
 }
 
 .whoweart {
