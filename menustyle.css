@@ -75,3 +75,9 @@
 .menuNav::-webkit-scrollbar {
     display: none;
   }
+
+.menuContainer {
+    width: 100%;
+    height: 1000px;
+    background-color: var(--ui-green);
+}
