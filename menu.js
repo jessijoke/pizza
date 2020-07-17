@@ -275,13 +275,13 @@ menuLoader = () => {
     for (let i = 0; i < psmenu["Pizza"].length; i++) {
         for (let j = 0; j < 3; j++) {
             if (j == 0) {
-                menuContent.innerHTML = menuContent.innerHTML + "<h1>" + psmenu["Pizza"][i]["item"][j] + "</h1>";
+                menuContent.innerHTML = menuContent.innerHTML + "<h1 data-aos='fade-up'>" + psmenu["Pizza"][i]["item"][j] + "</h1>";
             }
             if (j == 1) {
-                menuContent.innerHTML = menuContent.innerHTML + "<h2>" + psmenu["Pizza"][i]["item"][j] + "</h2>";
+                menuContent.innerHTML = menuContent.innerHTML + "<h2 data-aos='fade-up'>" + psmenu["Pizza"][i]["item"][j] + "</h2>";
             }
             if (j == 2) {
-                menuContent.innerHTML = menuContent.innerHTML + "<h3>" + psmenu["Pizza"][i]["item"][j] + "</h3>";
+                menuContent.innerHTML = menuContent.innerHTML + "<h3 data-aos='fade-up'>" + psmenu["Pizza"][i]["item"][j] + "</h3>";
             }
         }
     };
