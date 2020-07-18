@@ -33,22 +33,22 @@ let psmenu = {
     ],
     "Appetizers": [
         {
-        item: ["http://wytheria.com/JessicaJoy/pizzasavant/images/menuimages/pizza/create.jpg", "Macho Nacho", "corn tortilla chips, black-eyed pea & corn salsa, 4-cheese blend, lime-cilantro crema, jalapenos, pico de gallo, scallions (add southwestern chicken, taco beef, veggie chicken or veggie beef for 2.99, add fresh guacamole, extra pico or sour cream for .75  (gluten free)", 10.99]
+        item: ["http://wytheria.com/JessicaJoy/pizzasavant/images/menuimages/app/machonacho.jpg", "Macho Nacho", "corn tortilla chips, black-eyed pea & corn salsa, 4-cheese blend, lime-cilantro crema, jalapenos, pico de gallo, scallions (add southwestern chicken, taco beef, veggie chicken or veggie beef for 2.99, add fresh guacamole, extra pico or sour cream for .75  (gluten free)", 10.99]
         },
         {
-        item: ["http://wytheria.com/JessicaJoy/pizzasavant/images/menuimages/pizza/create.jpg", "Thai Chicken Lettuce Wraps", "grilled chicken, cucumbers, fresh veggies, lettuce wraps, peanut & red chili sauces (available vegetarian with veggie chicken or veggie beef, add 1.99) (gluten free)", 12.99]
+        item: ["http://wytheria.com/JessicaJoy/pizzasavant/images/menuimages/app/thaichickenlettuce.jpg", "Thai Chicken Lettuce Wraps", "grilled chicken, cucumbers, fresh veggies, lettuce wraps, peanut & red chili sauces (available vegetarian with veggie chicken or veggie beef, add 1.99) (gluten free)", 12.99]
         },
         {
-        item: ["http://wytheria.com/JessicaJoy/pizzasavant/images/menuimages/pizza/create.jpg", "Rosemary Fries", "signature rosemary-garlic spice", 7.49]
+        item: ["http://wytheria.com/JessicaJoy/pizzasavant/images/menuimages/app/rosemaryfries.jpg", "Rosemary Fries", "signature rosemary-garlic spice", 7.49]
         },
         {
-        item: ["http://wytheria.com/JessicaJoy/pizzasavant/images/menuimages/pizza/create.jpg", "Ultimate Garlic Bread", "garlic bread, garlic butter, italian cheese blend, ranch, marinara", 8.69]
+        item: ["http://wytheria.com/JessicaJoy/pizzasavant/images/menuimages/app/ultimategarlicbread.jpg", "Ultimate Garlic Bread", "garlic bread, garlic butter, italian cheese blend, ranch, marinara", 8.69]
         },
         {
-        item: ["http://wytheria.com/JessicaJoy/pizzasavant/images/menuimages/pizza/create.jpg", "Ahi Tuna Poke Bowl", "sesame-crusted tuna, rice noodles, carrots, seaweed, red chili sauce (available vegetarian with veggie chicken or beef, add 1.99) (gluten free)", 13.49]
+        item: ["http://wytheria.com/JessicaJoy/pizzasavant/images/menuimages/app/ahitunapoke.jpg", "Ahi Tuna Poke Bowl", "sesame-crusted tuna, rice noodles, carrots, seaweed, red chili sauce (available vegetarian with veggie chicken or beef, add 1.99) (gluten free)", 13.49]
         },
         {
-        item: ["http://wytheria.com/JessicaJoy/pizzasavant/images/menuimages/pizza/create.jpg", "Caribbean Pesto Hummus Crudite", "coconut-cashew pesto hummus, fresh vegetables, naan bread", 9.49]
+        item: ["http://wytheria.com/JessicaJoy/pizzasavant/images/menuimages/app/pestohummus.jpg", "Caribbean Pesto Hummus Crudite", "coconut-cashew pesto hummus, fresh vegetables, naan bread", 9.49]
         }
     ],
     "Salads": [
