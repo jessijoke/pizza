@@ -16,19 +16,19 @@ let psmenu = {
         item: ["Meatsa", "pepperoni, sausage, ham, bacon, four cheese blend, house red sauce", 14.49]
         },
         {
-        item: ["Hawaiian Pig", "pepperoni, sausage, ham, bacon, four cheese blend, house red sauce", 14.49]
+        item: ["Hawaiian Pig", "ham, bacon, sausage, pineapple, jalapeÃ±o peppers, romano cheese, grand armory beer-b-q sauce", 14.49]
         },
         {
-        item: ["Create Your Own", "pepperoni, sausage, ham, bacon, four cheese blend, house red sauce", 14.49]
+        item: ["Create Your Own", "choice of sauce (red sauce, barbecue, basil pesto, herb oil) and cheese (italian cheese blend, goat cheese, artisan bleu, fresh mozzarella)", 14.49]
         },
         {
-        item: ["Margherita", "pepperoni, sausage, ham, bacon, four cheese blend, house red sauce", 14.49]
+        item: ["Margherita", "roma tomatoes, roasted garlic, fresh basil, fresh mozzarella, italian cheese blend, herb oil", 14.49]
         },
         {
-        item: ["Capo", "pepperoni, sausage, ham, bacon, four cheese blend, house red sauce", 14.49]
+        item: ["Capo", "pepperoni, sausage, ham, red onions, roasted peppers, fresh basil, italian cheese blend, marinara", 14.49]
         },
         {
-        item: ["Pizza Toppings", "pepperoni, sausage, ham, bacon, four cheese blend, house red sauce", 14.49]
+        item: ["Pizza Toppings", "ham, bacon, pepperoni, italian sausage, roasted chicken, bell peppers, roasted red peppers, red onions, fresh basil, roasted garlic, tomatoes, jalapenos, pineapple, mushrooms, fresh mozzarella, black-eyed pea and corn salsa", 14.49]
         }
     ],
     "Appetizers": [
@@ -158,41 +158,18 @@ let psmenu = {
     ]
   };
 
-/*let menu = {
-    "Desserts": {
-        {
-            name: 
-        },
-        {
-            name: 
-        },
-        {
-            name: 
-        }
-    },
-    "Beaverages": {
-        {
-            name: 
-        }
-
-    },
-};*/
-
-/*menuContent.textContent = psmenu["Pizza"].meatsa;*/
-//console.log(psmenu["Pizza"][1]["item"][1]);
-
 menuLoader = (categ) => {
     menuContent.innerHTML = "";
     for (let i = 0; i < psmenu[categ].length; i++) {
         for (let j = 0; j < 3; j++) {
             if (j == 0) {
-                menuContent.innerHTML = menuContent.innerHTML + "<h1>" + psmenu[categ][i]["item"][j] + "</h1>";
+                menuContent.innerHTML = menuContent.innerHTML + "<h1 data-aos='fade-up'>" + psmenu[categ][i]["item"][j] + "</h1>";
             }
             if (j == 1) {
-                menuContent.innerHTML = menuContent.innerHTML + "<h2>" + psmenu[categ][i]["item"][j] + "</h2>";
+                menuContent.innerHTML = menuContent.innerHTML + "<h2 data-aos='fade-right'>" + psmenu[categ][i]["item"][j] + "</h2>";
             }
             if (j == 2) {
-                menuContent.innerHTML = menuContent.innerHTML + "<h3>" + psmenu[categ][i]["item"][j] + "</h3>";
+                menuContent.innerHTML = menuContent.innerHTML + "<h3 data-aos='fade-left'>" + psmenu[categ][i]["item"][j] + "</h3>";
             }
         }
     };

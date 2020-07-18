@@ -130,11 +130,19 @@ body {
     overflow: hidden;
     margin-top: -100px;
 }
+/*
 .mainArea {
     margin-top: 100px;
     display: grid;
     grid-template-columns: 8.5% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.5%;
     grid-template-rows: 8rem 75vh 150vh 100vh;
+}*/
+
+.mainArea {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 8.5% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.5%;
+    grid-template-rows: 8rem 500px 150vh 100vh;
 }
 
 .aboutBlock {
@@ -188,6 +196,8 @@ body {
     max-height: 90%;
     max-width: 80%;
     overflow: hidden;
+    margin-top: -10%;
+
 }
 
 .freshIn {
@@ -257,6 +267,7 @@ body {
 .aboutInfoContent {
     max-height: 90%;
     overflow: hidden ;
+    margin-top: -20%;
 }
 
 .cateringDiv {
@@ -293,7 +304,7 @@ body {
 }
 
 .cateringBlockTitle {
-    margin-top: 10%;
+    margin-top: 20%;
 }
  
 /*FOOTER---------------------*/
@@ -514,7 +525,7 @@ body {
         //margin-top: 8rem;
         grid-column-end: 11;
     }
-
+   
     /*Footer --------------- */
     .footerContainer {
         flex-direction: column;
@@ -534,10 +545,17 @@ body {
     .freshInPiz {
         justify-self: end;
     }
+
+    .cateringBlockTitle {
+        margin-top: 10%;
+    }
 }
 
 /*extra small devices*/
 @media (max-width: 600px) {
+    .mainArea {
+        grid-template-rows: 8rem 700px 150vh 100vh;
+    }
     .blockTitles {
         font-size: 2rem;
         margin-bottom: .25rem;
@@ -545,11 +563,19 @@ body {
     .aboutInfo {
         //margin-top: 30%;
     }
-    .cateringBlock {
+    .cateringDiv {
+        margin-top: -40%;
         padding-top: 10%;
     }
     .freshIn {
-        padding-right: 25%
+        padding-right: 25%;
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .freshInContent {
+        margin-top: -50%;
     }
 }
 
