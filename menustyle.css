@@ -120,3 +120,13 @@
     color: black;
     padding-bottom: 40px;
 }
+
+.menuimage {
+    display: block;
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
