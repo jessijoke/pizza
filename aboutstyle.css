@@ -5,6 +5,10 @@
     src: local('Gabriola'), url('gabriola/gabriola Font Download.woff') format('woff');
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .aboutContainer {
     display: grid;
     grid-template-columns: 8.5% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.5%;

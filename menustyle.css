@@ -16,7 +16,10 @@
     --ui-yellow: #FCDA43;
     --ui-red: #F0532A;
     --ui-green: #AFC94F;
+}
 
+body {
+    overflow-x: hidden;
 }
 
 .menuNav {
