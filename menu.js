@@ -8,7 +8,6 @@ const KidsMenu = document.getElementById("KidsMenu");
 const Desserts = document.getElementById("Desserts");
 const Beaverages = document.getElementById("Beaverages");
 
-AOS.init({disable: 'mobile'});
 
 let psmenu = {
     "Pizza": [
