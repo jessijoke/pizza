@@ -10,6 +10,7 @@ body {
 }
 
 .aboutContainer {
+    overflow-x: hidden;
     display: grid;
     grid-template-columns: 8.5% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.5%;
     grid-template-rows: 100px 500px 75px 500px 100px 650px;

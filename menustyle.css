@@ -24,6 +24,7 @@ body {
 }
 
 .menuNav {
+    overflow-x: hidden;
     font-family: 'gab-font';
     font-size: 1.25rem;
     background-color: var(--ui-red);
@@ -94,6 +95,7 @@ body {
   }
 
 .menuContainer {
+    overflow-x: hidden;
     padding: 25px 0px 50px 0px;
     width: 100%;
     background-color: var(--ui-green);
