@@ -48,6 +48,12 @@
     }
 }
 
+@media (max-width: 1025px) {
+    .cateringbody {
+        padding-top: 50px;
+    }
+}
+
 @media (max-width: 700px) {
     .cateringbody {
         grid-template-rows: 250px 200px 800px 20px 700px;
