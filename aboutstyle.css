@@ -13,7 +13,42 @@ body {
     overflow-x: hidden;
     display: grid;
     grid-template-columns: 8.5% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.5%;
-    grid-template-rows: 100px 500px 75px 500px 100px 650px;
+    grid-template-rows: 100px 500px 75px 500px 100px 650px 700px;
+}
+/*
+#mapContainer {
+    grid-column: 1/13;
+    grid-row: 7/8;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    flex-direction: row;
+}*/
+
+#map {
+    grid-column: 1/13;;
+    overflow: hidden;
+    //padding-bottom:56.25%;
+    position:relative;
+    height:700px;
+}
+
+#map iframe {
+    left:0;
+    top:0;
+    height:700px;
+    width:100%;
+    position:absolute;
+}
+
+#address {
+    font-family: 'gab-font';
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    line-height: .9rem;
+    margin-left: -20%;
 }
 
 .whoweart {
@@ -122,5 +157,14 @@ text-align: center;
     }
     .forminfo {
         width: 95%;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    #mapContainer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 }
