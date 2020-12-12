@@ -98,7 +98,7 @@ body {
 }
 
 .contactsection {
-    background-image: url("/pizza/images/images/contact-bg.png");
+    background-image: url("/pizza/images/contact-bg.png");
     display: block;
     background-size: cover;
     grid-column-start: 1;
