@@ -137,7 +137,7 @@ let psmenu = {
     ],
     "Beaverages": [
         {
-            item: ["/pizza/images/menuimages/beaverages/soda.jpg", "fountain soda", "Coca-Cola, Diet-Coke, Coke Zero, Sprite, Orange Fanta, Sprite, Barqs, Dr Pepper", 1.49]
+            item: ["/pizza/images/menuimages/beverages/soda.jpg", "fountain soda", "Coca-Cola, Diet-Coke, Coke Zero, Sprite, Orange Fanta, Sprite, Barqs, Dr Pepper", 1.49]
         }
     ]
   };
