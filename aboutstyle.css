@@ -52,7 +52,7 @@ body {
 }
 
 .whoweart {
-    background-image: url('http://wytheria.com/JessicaJoy/pizzasavant/images/about-whoweart.png');
+    background-image: url('/pizza/images/about-whoweart.png');
     display: block;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -63,7 +63,7 @@ body {
 }
 
 .centerpizzas {
-    background-image: url('http://wytheria.com/JessicaJoy/pizzasavant/images/wwa-pizzas.png');
+    background-image: url('/pizza/images/wwa-pizzas.png');
     display: block;
     grid-column-start: 1;
     grid-column-end: 13;
@@ -76,7 +76,7 @@ body {
 }
 
 .whatwereabout {
-    background-image: url('http://wytheria.com/JessicaJoy/pizzasavant/images/about-whatwereabout.png');
+    background-image: url('/pizza/images/about-whatwereabout.png');
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@ body {
 }
 
 .contactsection {
-    background-image: url("http://wytheria.com/JessicaJoy/pizzasavant/images/contact-bg.png");
+    background-image: url("/pizza/images/images/contact-bg.png");
     display: block;
     background-size: cover;
     grid-column-start: 1;
